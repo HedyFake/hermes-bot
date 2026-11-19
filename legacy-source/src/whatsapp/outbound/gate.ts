@@ -1,0 +1,135 @@
+import { validAttachment } from './media-check.js';
+import type { OutboundMessage, SendResult, WhatsAppProvider } from '../adapters/types.js';
+
+/** Deduplicator untuk event pesan WhatsApp masuk agar tidak diproses dua kali. */
+export class InboundDeduper {
+  private readonly seen = new Map<string, number>();
+  private readonly ttlMs: number;
+  private readonly now: () => number;
+
+  constructor(opts?: { ttlMs?: number; now?: () => number }) {
+    this.ttlMs = opts?.ttlMs ?? 60 * 60 * 1000;
+    this.now = opts?.now ?? (() => Date.now());
+  }
+
+  /** Mengembalikan `true` jika pesan BARU, `false` jika duplikat. */
+  checkAndMark(chatJid: string, providerMessageId: string): boolean {
+    const now = this.now();
+    for (const [k, exp] of this.seen) {
+      if (now < exp) break;
+      this.seen.delete(k);
+    }
+    const key = `${chatJid}|${providerMessageId}`;
+    if (this.seen.has(key)) return false;
+    this.seen.set(key, now + this.ttlMs);
+    return true;
+  }
+}
+
+export interface OutboundGateOptions {
+  provider: WhatsAppProvider;
+  outboundEnabled: boolean;
+  dryRun: boolean;
+  allowedGroupJids?: Iterable<string>;
+  /** Izinkan otomatis seluruh grup yang tidak di-pause (default: true). */
+  allowAllGroups?: boolean;
+  maxMediaBytes?: number;
+}
+
+/**
+ * Gerbang pengiriman keluar:
+ * - Emergency stop instan untuk semua pesan ke grup/publik.
+ * - Allow access otomatis untuk seluruh grup yang aktif (kecuali grup yang di-pause admin).
+ * - Idempotency key agar retry tidak menggandakan pengiriman.
+ * - Mode dry-run.
+ */
+export class OutboundGate {
+  private readonly provider: WhatsAppProvider;
+  private outboundEnabled: boolean;
+  private dryRun: boolean;
+  private allowAllGroups: boolean;
+  private readonly maxMediaBytes: number;
+  private emergencyStopped = false;
+  private readonly allowedGroups = new Set<string>();
+  private readonly pausedGroups = new Set<string>();
+  private readonly sentKeys = new Map<string, SendResult>();
+  private readonly pending = new Map<string, Promise<SendResult>>();
+
+  constructor(opts: OutboundGateOptions) {
+    this.provider = opts.provider;
+    this.maxMediaBytes = opts.maxMediaBytes ?? 16 * 1024 * 1024;
+    this.outboundEnabled = opts.outboundEnabled;
+    this.dryRun = opts.dryRun;
+    this.allowAllGroups = opts.allowAllGroups ?? true;
+    if (opts.allowedGroupJids) {
+      for (const g of opts.allowedGroupJids) if (g) this.allowedGroups.add(g);
+    }
+  }
+
+  registerAllowedGroup(jid: string): void {
+    if (jid) this.allowedGroups.add(jid);
+  }
+  listAllowedGroups(): string[] {
+    return [...this.allowedGroups];
+  }
+  pauseGroup(jid: string): void {
+    this.pausedGroups.add(jid);
+  }
+  resumeGroup(jid: string): void {
+    this.pausedGroups.delete(jid);
+    this.allowedGroups.add(jid);
+  }
+  isGroupPaused(jid: string): boolean {
+    return this.pausedGroups.has(jid);
+  }
+  triggerEmergencyStop(): void {
+    this.emergencyStopped = true;
+  }
+  clearEmergencyStop(): void {
+    this.emergencyStopped = false;
+  }
+  isEmergencyStopped(): void | boolean {
+    return this.emergencyStopped;
+  }
+
+  private remember(key: string, result: SendResult) {
+    if (this.sentKeys.size >= 10_000) {
+      const oldest = this.sentKeys.keys().next().value;
+      if (oldest !== undefined) this.sentKeys.delete(oldest);
+    }
+    this.sentKeys.set(key, result);
+  }
+
+  async send(msg: OutboundMessage, opts?: { isAdminPrivateReply?: boolean }): Promise<SendResult> {
+    const key = JSON.stringify([msg.chatJid,msg.idempotencyKey]);
+    const prev = this.sentKeys.get(key);
+    if (prev) return prev;
+
+    const isGroup = msg.chatJid.endsWith('@g.us');
+
+    if (this.emergencyStopped && (isGroup || !opts?.isAdminPrivateReply)) {
+      return { ok: false, error: 'emergency_stop_active' };
+    }
+    if (isGroup) {
+      if (this.allowAllGroups) {
+        this.allowedGroups.add(msg.chatJid);
+      } else if (!this.allowedGroups.has(msg.chatJid)) {
+        return { ok: false, error: 'group_not_in_allowlist' };
+      }
+      if (this.pausedGroups.has(msg.chatJid)) {
+        return { ok: false, error: 'group_paused' };
+      }
+    }
+    if (msg.media && !validAttachment(msg.media,this.maxMediaBytes)) return {ok:false,error:'invalid_or_oversized_attachment'};
+    if (this.dryRun) return { ok: true, dryRun: true, providerMessageId: `dryrun-${msg.idempotencyKey}` };
+    if (!this.outboundEnabled && (isGroup || !opts?.isAdminPrivateReply)) return { ok: false, error: 'outbound_disabled' };
+    const existing = this.pending.get(key);
+    if (existing) return existing;
+    const sending = this.provider.send(msg).then(result => {
+      if (result.ok) this.remember(key,result);
+      return result;
+    }).catch(() => ({ok:false,error:'provider_send_failed'})).finally(() => this.pending.delete(key));
+    this.pending.set(key,sending);
+    return sending;
+  }
+}

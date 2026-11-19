@@ -1,0 +1,2609 @@
+{
+ "ringkasan": {
+  "perintah_kanonik": 145,
+  "alias": 307,
+  "khusus_admin": 51
+ },
+ "perintah": [
+  {
+   "command": "about",
+   "aliases": [
+    ".about"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".about"
+   ]
+  },
+  {
+   "command": "ai.auto",
+   "aliases": [
+    ".ai unpin",
+    ".ai auto"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".ai auto on"
+   ]
+  },
+  {
+   "command": "ai.flashcard",
+   "aliases": [
+    ".flashcard"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".flashcard"
+   ]
+  },
+  {
+   "command": "ai.model",
+   "aliases": [
+    ".ai model",
+    ".ai pin"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".ai model <alias>"
+   ]
+  },
+  {
+   "command": "ai.models",
+   "aliases": [
+    ".ai models"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".ai models"
+   ]
+  },
+  {
+   "command": "ai.quiz",
+   "aliases": [
+    ".quiz",
+    ".kuis"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".quiz"
+   ]
+  },
+  {
+   "command": "ai.status",
+   "aliases": [
+    ".ai"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".ai status"
+   ]
+  },
+  {
+   "command": "ai.summarize",
+   "aliases": [
+    ".summarize",
+    ".ringkas"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".summarize <teks>"
+   ]
+  },
+  {
+   "command": "ai.test",
+   "aliases": [
+    ".ai test"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".ai test <pesan>"
+   ]
+  },
+  {
+   "command": "ai.translate",
+   "aliases": [
+    ".translate",
+    ".tr"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".translate"
+   ]
+  },
+  {
+   "command": "analytics.stats",
+   "aliases": [
+    ".stats",
+    ".activity",
+    ".report"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".stats"
+   ]
+  },
+  {
+   "command": "announce",
+   "aliases": [
+    ".announce",
+    ".pengumuman"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-tugas-catatan",
+   "strategi": "hermes-native",
+   "catatan": "tugas.py / cron Hermes",
+   "contoh_sintaks": [
+    ".announce"
+   ]
+  },
+  {
+   "command": "approve",
+   "aliases": [
+    ".approve",
+    ".admin approve"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".approve"
+   ]
+  },
+  {
+   "command": "ask",
+   "aliases": [
+    ".ask",
+    ".tanya",
+    ".brainly"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".ask <pertanyaan>"
+   ]
+  },
+  {
+   "command": "audit",
+   "aliases": [
+    ".audit",
+    ".admin audit"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".audit"
+   ]
+  },
+  {
+   "command": "auth.login",
+   "aliases": [
+    ".login",
+    ".password",
+    ".pass",
+    ".auth"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Alur autentikasi privat",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".login"
+   ]
+  },
+  {
+   "command": "auth.logout",
+   "aliases": [
+    ".logout",
+    ".lock"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Alur autentikasi privat",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".logout"
+   ]
+  },
+  {
+   "command": "backup",
+   "aliases": [
+    ".backup",
+    ".admin backup"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".backup"
+   ]
+  },
+  {
+   "command": "broadcast.preview",
+   "aliases": [
+    ".broadcast"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler tersedia · diuji via dispatcher",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".broadcast preview <ID>"
+   ]
+  },
+  {
+   "command": "broadcast.send",
+   "aliases": [
+    ".broadcast send"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".broadcast send <ID>"
+   ]
+  },
+  {
+   "command": "calendar",
+   "aliases": [
+    ".kalender",
+    ".agenda"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "hermes-native",
+   "catatan": "Kalender akademik belum terkonfirmasi di seed; Hermes menghitung dari tanggal yang diberikan pengguna (hitungmundur di kelas.py).",
+   "contoh_sintaks": [
+    ".kalender"
+   ]
+  },
+  {
+   "command": "cancel",
+   "aliases": [
+    ".cancel"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".cancel"
+   ]
+  },
+  {
+   "command": "class.faq",
+   "aliases": [
+    ".faq"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".faq"
+   ]
+  },
+  {
+   "command": "class.info",
+   "aliases": [
+    ".kelas",
+    ".semester",
+    ".tahunajaran"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".kelas"
+   ]
+  },
+  {
+   "command": "class.members",
+   "aliases": [
+    ".anggota",
+    ".mahasiswa",
+    ".nim"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".anggota [nama]"
+   ]
+  },
+  {
+   "command": "class.officers",
+   "aliases": [
+    ".ketuakelas",
+    ".komting",
+    ".wakilkomting",
+    ".sekretaris",
+    ".bendahara",
+    ".wali",
+    ".pengurus",
+    ".pjmk"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".pengurus"
+   ]
+  },
+  {
+   "command": "class.rules",
+   "aliases": [
+    ".rules",
+    ".aturan"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".rules"
+   ]
+  },
+  {
+   "command": "confirm",
+   "aliases": [
+    ".confirm"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".confirm"
+   ]
+  },
+  {
+   "command": "countdown",
+   "aliases": [
+    ".countdown"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".countdown"
+   ]
+  },
+  {
+   "command": "courses",
+   "aliases": [
+    ".matkul"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".matkul"
+   ]
+  },
+  {
+   "command": "dashboard",
+   "aliases": [
+    ".dashboard",
+    ".admin",
+    ".maintenance"
+   ],
+   "akses": "Admin privat",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".dashboard"
+   ]
+  },
+  {
+   "command": "db.status",
+   "aliases": [
+    ".db status"
+   ],
+   "akses": "Admin privat",
+   "data": "Probe PostgreSQL",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".db status"
+   ]
+  },
+  {
+   "command": "digest",
+   "aliases": [
+    ".digest"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".digest today"
+   ]
+  },
+  {
+   "command": "doc.minutes",
+   "aliases": [
+    ".notulensi",
+    ".doc minutes"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".notulensi"
+   ]
+  },
+  {
+   "command": "doc.pdf",
+   "aliases": [
+    ".doc",
+    ".pdf"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".doc pdf <judul>|<isi>"
+   ]
+  },
+  {
+   "command": "doc.permission",
+   "aliases": [
+    ".suratizin",
+    ".doc create",
+    ".doc permission"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".suratizin"
+   ]
+  },
+  {
+   "command": "document.ask",
+   "aliases": [
+    ".tanyadokumen"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "Google Drive: butuh akun layanan & folder",
+   "contoh_sintaks": [
+    ".tanyadokumen <id> <pertanyaan>"
+   ]
+  },
+  {
+   "command": "document.summary",
+   "aliases": [
+    ".ringkasdokumen"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "Google Drive: butuh akun layanan & folder",
+   "contoh_sintaks": [
+    ".ringkasdokumen <id>"
+   ]
+  },
+  {
+   "command": "download",
+   "aliases": [
+    ".ambilmateri",
+    ".download"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "Google Drive: butuh akun layanan & folder",
+   "contoh_sintaks": [
+    ".download <id>"
+   ]
+  },
+  {
+   "command": "drive.files",
+   "aliases": [
+    ".drive files",
+    ".drive search"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "butuh kredensial LMS/Drive milik pengguna",
+   "contoh_sintaks": [
+    ".drive files"
+   ]
+  },
+  {
+   "command": "drive.status",
+   "aliases": [
+    ".drive status",
+    ".drive errors"
+   ],
+   "akses": "Admin privat",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "butuh kredensial LMS/Drive milik pengguna",
+   "contoh_sintaks": [
+    ".drive status"
+   ]
+  },
+  {
+   "command": "drive.sync",
+   "aliases": [
+    ".drive sync"
+   ],
+   "akses": "Admin privat",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "butuh kredensial LMS/Drive milik pengguna",
+   "contoh_sintaks": [
+    ".drive sync"
+   ]
+  },
+  {
+   "command": "emergency.resume",
+   "aliases": [
+    ".admin resume",
+    ".admin off"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".admin resume"
+   ]
+  },
+  {
+   "command": "emergency.stop",
+   "aliases": [
+    ".admin pause",
+    ".admin on"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".admin pause"
+   ]
+  },
+  {
+   "command": "errors",
+   "aliases": [
+    ".errors"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".errors [today]"
+   ]
+  },
+  {
+   "command": "filter.review",
+   "aliases": [
+    ".filter review"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".filter review"
+   ]
+  },
+  {
+   "command": "filter.status",
+   "aliases": [
+    ".filter",
+    ".monitor"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".filter status"
+   ]
+  },
+  {
+   "command": "fun.afk",
+   "aliases": [
+    ".afk"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".afk"
+   ]
+  },
+  {
+   "command": "fun.coin",
+   "aliases": [
+    ".koin",
+    ".flipcoin"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".koin"
+   ]
+  },
+  {
+   "command": "fun.dare",
+   "aliases": [
+    ".dare"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".dare"
+   ]
+  },
+  {
+   "command": "fun.dice",
+   "aliases": [
+    ".dadu"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".dadu"
+   ]
+  },
+  {
+   "command": "fun.doa",
+   "aliases": [
+    ".doaharian",
+    ".ayatkursi"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".doaharian"
+   ]
+  },
+  {
+   "command": "fun.fact",
+   "aliases": [
+    ".faktaunik"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".faktaunik"
+   ]
+  },
+  {
+   "command": "fun.pantun",
+   "aliases": [
+    ".pantun"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".pantun [tema]"
+   ]
+  },
+  {
+   "command": "fun.quiz_answer",
+   "aliases": [
+    ".jawab"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".jawab <teks>"
+   ]
+  },
+  {
+   "command": "fun.quiz_giveup",
+   "aliases": [
+    ".nyerah"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".nyerah"
+   ]
+  },
+  {
+   "command": "fun.quiz_start",
+   "aliases": [
+    ".tebakkata",
+    ".caklontong",
+    ".family100",
+    ".mathquiz"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".tebakkata",
+    ".caklontong",
+    ".family100",
+    ".mathquiz"
+   ]
+  },
+  {
+   "command": "fun.quote",
+   "aliases": [
+    ".quotes",
+    ".quoterandom",
+    ".katabijak",
+    ".quotesislami",
+    ".quotesmotivasi",
+    ".quotesnasehat"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".quotes [tema]"
+   ]
+  },
+  {
+   "command": "fun.shell",
+   "aliases": [
+    ".apakah",
+    ".kapankah",
+    ".bisakah",
+    ".kerangajaib",
+    ".rate"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".apakah <pertanyaan>"
+   ]
+  },
+  {
+   "command": "fun.sholat",
+   "aliases": [
+    ".jadwalsholat"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".jadwalsholat"
+   ]
+  },
+  {
+   "command": "fun.suit",
+   "aliases": [
+    ".suit"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".suit <pilihan>"
+   ]
+  },
+  {
+   "command": "fun.surah",
+   "aliases": [
+    ".listsurah",
+    ".quran"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".listsurah"
+   ]
+  },
+  {
+   "command": "fun.text",
+   "aliases": [
+    ".hilih",
+    ".alay",
+    ".besarkecil",
+    ".balikhuruf",
+    ".namaninja"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".hilih <teks>"
+   ]
+  },
+  {
+   "command": "fun.truth",
+   "aliases": [
+    ".truth"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".truth"
+   ]
+  },
+  {
+   "command": "fun.unafk",
+   "aliases": [
+    ".unafk"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".unafk"
+   ]
+  },
+  {
+   "command": "game",
+   "aliases": [
+    ".game",
+    ".sinonim",
+    ".antonim",
+    ".anagram",
+    ".tebakemoji",
+    ".deretangka",
+    ".asahotak",
+    ".tebakpola"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "skrip",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".game",
+    ".game buat [jumlah|duel]",
+    ".game gabung",
+    ".game mulai [kategori]",
+    ".game riwayat",
+    ".game ai <topik>"
+   ]
+  },
+  {
+   "command": "game.daily",
+   "aliases": [
+    ".dailychallenge"
+   ],
+   "akses": "Pengguna",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".dailychallenge"
+   ]
+  },
+  {
+   "command": "game.hint",
+   "aliases": [
+    ".hint"
+   ],
+   "akses": "Pengguna",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".hint"
+   ]
+  },
+  {
+   "command": "game.score",
+   "aliases": [
+    ".score"
+   ],
+   "akses": "Pengguna",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".score"
+   ]
+  },
+  {
+   "command": "gamification.leaderboard",
+   "aliases": [
+    ".leaderboard",
+    ".lb",
+    ".level",
+    ".lvl"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".leaderboard"
+   ]
+  },
+  {
+   "command": "gamification.privacy",
+   "aliases": [
+    ".privacy"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-hiburan",
+   "strategi": "perlu-port",
+   "catatan": "hiburan.py (XP/leaderboard/sesi grup: perlu port, lihat SKILL.md)",
+   "contoh_sintaks": [
+    ".privacy gamification on"
+   ]
+  },
+  {
+   "command": "group.classify",
+   "aliases": [
+    ".cekpesan",
+    ".klasifikasi"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".cekpesan"
+   ]
+  },
+  {
+   "command": "group.nimbrung",
+   "aliases": [
+    ".nimbrung",
+    ".nongkrong",
+    ".diam",
+    ".hening",
+    ".berhentinimbrung"
+   ],
+   "akses": "Admin grup / owner",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".nimbrung status"
+   ]
+  },
+  {
+   "command": "group.setkelasa",
+   "aliases": [
+    ".setkelasa",
+    ".setnursing"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".setkelasa"
+   ]
+  },
+  {
+   "command": "group.setpjmk",
+   "aliases": [
+    ".setpjmk"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".setpjmk"
+   ]
+  },
+  {
+   "command": "groupgen",
+   "aliases": [
+    ".kelompok",
+    ".buatkelompok"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".kelompok"
+   ]
+  },
+  {
+   "command": "groupid",
+   "aliases": [
+    ".groupid",
+    ".id"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".groupid"
+   ]
+  },
+  {
+   "command": "groups",
+   "aliases": [
+    ".groups",
+    ".group",
+    ".source",
+    ".target"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".groups"
+   ]
+  },
+  {
+   "command": "groups.add",
+   "aliases": [
+    ".groups add",
+    ".groups set"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".groups add <JID> <nama>"
+   ]
+  },
+  {
+   "command": "groups.pause",
+   "aliases": [
+    ".groups pause",
+    ".groups remove",
+    ".filter pause",
+    ".filter off"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".groups pause <JID>"
+   ]
+  },
+  {
+   "command": "groups.resume",
+   "aliases": [
+    ".groups resume",
+    ".filter resume",
+    ".filter on"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".groups resume <JID>"
+   ]
+  },
+  {
+   "command": "groups.sources",
+   "aliases": [
+    ".groups sources",
+    ".groups list"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".groups sources"
+   ]
+  },
+  {
+   "command": "health",
+   "aliases": [
+    ".health"
+   ],
+   "akses": "Admin privat",
+   "data": "Reminder / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".health"
+   ]
+  },
+  {
+   "command": "help",
+   "aliases": [
+    ".help"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".help"
+   ]
+  },
+  {
+   "command": "info",
+   "aliases": [
+    ".info",
+    ".ingfo"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".info"
+   ]
+  },
+  {
+   "command": "journal.search",
+   "aliases": [
+    ".jurnal",
+    ".carijurnal",
+    ".journal",
+    ".scholar",
+    ".googlescholar",
+    ".pubmed",
+    ".garuda"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".jurnal <topik>"
+   ]
+  },
+  {
+   "command": "lecturers",
+   "aliases": [
+    ".dosen",
+    ".nomordosen",
+    ".kontakdosen"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".dosen [nama]"
+   ]
+  },
+  {
+   "command": "lms",
+   "aliases": [
+    ".lms"
+   ],
+   "akses": "Pengguna",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "butuh kredensial LMS/Drive milik pengguna",
+   "contoh_sintaks": [
+    ".lms help",
+    ".lms <nama> dashboard",
+    ".lms <nama> matkul",
+    ".lms <nama> materi",
+    ".lms <nama> tugas",
+    ".lms <nama> kuis",
+    ".lms <nama> sync",
+    ".lms <nama> logout"
+   ]
+  },
+  {
+   "command": "logs",
+   "aliases": [
+    ".logs"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".logs [jumlah]"
+   ]
+  },
+  {
+   "command": "materials",
+   "aliases": [
+    ".dokumen",
+    ".materi"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "Google Drive: butuh akun layanan & folder",
+   "contoh_sintaks": [
+    ".materi"
+   ]
+  },
+  {
+   "command": "materials.search",
+   "aliases": [
+    ".carimateri"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-lms-drive",
+   "strategi": "perlu-port",
+   "catatan": "Google Drive: butuh akun layanan & folder",
+   "contoh_sintaks": [
+    ".carimateri <kata>"
+   ]
+  },
+  {
+   "command": "media.effect",
+   "aliases": [
+    ".blur",
+    ".invert",
+    ".grayscale",
+    ".hitamputih",
+    ".flip",
+    ".flop",
+    ".resize",
+    ".compress"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".blur",
+    ".resize <lebar> <tinggi>"
+   ]
+  },
+  {
+   "command": "media.imagesearch",
+   "aliases": [
+    ".gambar",
+    ".carigambar",
+    ".img",
+    ".image",
+    ".foto",
+    ".carifoto",
+    ".pinterest"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".gambar"
+   ]
+  },
+  {
+   "command": "media.ocr",
+   "aliases": [
+    ".ocr"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".ocr"
+   ]
+  },
+  {
+   "command": "media.qr",
+   "aliases": [
+    ".qr",
+    ".qrcode"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".qr <teks>"
+   ]
+  },
+  {
+   "command": "media.quotemaker",
+   "aliases": [
+    ".quotemaker",
+    ".makequote",
+    ".quotesmaker"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".quotemaker"
+   ]
+  },
+  {
+   "command": "media.schedulecard",
+   "aliases": [
+    ".kartujadwal",
+    ".kartuucapan"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".kartujadwal [hari]"
+   ]
+  },
+  {
+   "command": "media.sticker",
+   "aliases": [
+    ".sticker",
+    ".stiker",
+    ".s",
+    ".stickerwm"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".sticker"
+   ]
+  },
+  {
+   "command": "media.toimg",
+   "aliases": [
+    ".toimg"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".toimg"
+   ]
+  },
+  {
+   "command": "media.ttp",
+   "aliases": [
+    ".ttp",
+    ".attp"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".ttp <teks>"
+   ]
+  },
+  {
+   "command": "media.tts",
+   "aliases": [
+    ".tts",
+    ".say"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "perlu-port",
+   "catatan": "sticker/efek gambar/QR/OCR/TTS: lihat legacy-source/src/modules/media",
+   "contoh_sintaks": [
+    ".tts"
+   ]
+  },
+  {
+   "command": "menu",
+   "aliases": [
+    ".menu",
+    ".allmenu",
+    ".admin menu"
+   ],
+   "akses": "Pengguna",
+   "data": "Drive / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".menu"
+   ]
+  },
+  {
+   "command": "music",
+   "aliases": [
+    ".music",
+    ".musik"
+   ],
+   "akses": "Pengguna",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".music <judul>"
+   ]
+  },
+  {
+   "command": "notes",
+   "aliases": [
+    ".note",
+    ".catatan"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-tugas-catatan",
+   "strategi": "skrip",
+   "catatan": "tugas.py / cron Hermes",
+   "contoh_sintaks": [
+    ".note list"
+   ]
+  },
+  {
+   "command": "owner",
+   "aliases": [
+    ".owner"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".owner"
+   ]
+  },
+  {
+   "command": "pair",
+   "aliases": [
+    ".pair"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Alur autentikasi privat",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".pair"
+   ]
+  },
+  {
+   "command": "pending",
+   "aliases": [
+    ".pending",
+    ".admin review"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".pending"
+   ]
+  },
+  {
+   "command": "ping",
+   "aliases": [
+    ".ping"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".ping"
+   ]
+  },
+  {
+   "command": "priority",
+   "aliases": [
+    ".priority"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler tersedia · diuji via dispatcher",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".priority"
+   ]
+  },
+  {
+   "command": "reject",
+   "aliases": [
+    ".reject",
+    ".admin reject"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".reject"
+   ]
+  },
+  {
+   "command": "relay",
+   "aliases": [
+    ".relay"
+   ],
+   "akses": "Admin privat",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".relay list"
+   ]
+  },
+  {
+   "command": "reminders",
+   "aliases": [
+    ".reminders",
+    ".reminder"
+   ],
+   "akses": "Pengguna",
+   "data": "Reminder / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-tugas-catatan",
+   "strategi": "hermes-native",
+   "catatan": "tugas.py / cron Hermes",
+   "contoh_sintaks": [
+    ".reminder"
+   ]
+  },
+  {
+   "command": "reminders.pause",
+   "aliases": [
+    ".reminder pause",
+    ".reminder resume"
+   ],
+   "akses": "Admin privat",
+   "data": "Reminder / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-tugas-catatan",
+   "strategi": "hermes-native",
+   "catatan": "tugas.py / cron Hermes",
+   "contoh_sintaks": [
+    ".reminder pause",
+    ".reminder resume"
+   ]
+  },
+  {
+   "command": "repo.inspect",
+   "aliases": [
+    ".repo"
+   ],
+   "akses": "Admin privat",
+   "data": "",
+   "status": "",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".repo <URL>"
+   ]
+  },
+  {
+   "command": "rewrite",
+   "aliases": [
+    ".rapikan",
+    ".perbaiki",
+    ".rewrite",
+    ".parafrase",
+    ".koreksi"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-akademik-keperawatan",
+   "strategi": "hermes-native",
+   "catatan": "dikerjakan Hermes dengan aturan di SKILL.md",
+   "contoh_sintaks": [
+    ".rapikan <teks>"
+   ]
+  },
+  {
+   "command": "runtime",
+   "aliases": [
+    ".runtime"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".runtime"
+   ]
+  },
+  {
+   "command": "schedule",
+   "aliases": [
+    ".schedule",
+    ".jadwal"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".jadwal [hari]"
+   ]
+  },
+  {
+   "command": "schedule.add",
+   "aliases": [
+    ".tambahjadwal",
+    ".jadwal add",
+    ".jadwal tambah"
+   ],
+   "akses": "Admin privat",
+   "data": "PostgreSQL",
+   "status": "Handler tersedia · uji transaksi",
+   "skill": "hdybot-kelas",
+   "strategi": "perlu-port",
+   "catatan": "Ubah jadwal: tulis ke tabel jadwal di hdybot.sqlite dengan konfirmasi pemilik (di bot lama: transaksi serializable + backup + audit)",
+   "contoh_sintaks": [
+    ".tambahjadwal"
+   ]
+  },
+  {
+   "command": "schedule.check_date",
+   "aliases": [
+    ".cekjadwal"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".cekjadwal <tanggal>"
+   ]
+  },
+  {
+   "command": "schedule.delete",
+   "aliases": [
+    ".hapusjadwal",
+    ".jadwal delete",
+    ".jadwal hapus"
+   ],
+   "akses": "Admin privat",
+   "data": "PostgreSQL",
+   "status": "Handler tersedia · uji transaksi",
+   "skill": "hdybot-kelas",
+   "strategi": "perlu-port",
+   "catatan": "Ubah jadwal: tulis ke tabel jadwal di hdybot.sqlite dengan konfirmasi pemilik (di bot lama: transaksi serializable + backup + audit)",
+   "contoh_sintaks": [
+    ".hapusjadwal"
+   ]
+  },
+  {
+   "command": "schedule.edit",
+   "aliases": [
+    ".editjadwal",
+    ".jadwal edit",
+    ".jadwal ubah"
+   ],
+   "akses": "Admin privat",
+   "data": "PostgreSQL",
+   "status": "Handler tersedia · uji transaksi",
+   "skill": "hdybot-kelas",
+   "strategi": "perlu-port",
+   "catatan": "Ubah jadwal: tulis ke tabel jadwal di hdybot.sqlite dengan konfirmasi pemilik (di bot lama: transaksi serializable + backup + audit)",
+   "contoh_sintaks": [
+    ".editjadwal"
+   ]
+  },
+  {
+   "command": "schedule.export",
+   "aliases": [
+    ".jadwal export"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".jadwal export csv"
+   ]
+  },
+  {
+   "command": "schedule.next",
+   "aliases": [
+    ".kuliahberikutnya"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".kuliahberikutnya"
+   ]
+  },
+  {
+   "command": "schedule.reset",
+   "aliases": [
+    ".resetjadwal",
+    ".jadwal reset"
+   ],
+   "akses": "Admin privat",
+   "data": "PostgreSQL",
+   "status": "Handler tersedia · uji transaksi",
+   "skill": "hdybot-kelas",
+   "strategi": "perlu-port",
+   "catatan": "Ubah jadwal: tulis ke tabel jadwal di hdybot.sqlite dengan konfirmasi pemilik (di bot lama: transaksi serializable + backup + audit)",
+   "contoh_sintaks": [
+    ".resetjadwal"
+   ]
+  },
+  {
+   "command": "schedule.today_courses",
+   "aliases": [
+    ".matkulhariini"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".matkulhariini"
+   ]
+  },
+  {
+   "command": "schedule.today_lecturers",
+   "aliases": [
+    ".dosenhariini"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".dosenhariini"
+   ]
+  },
+  {
+   "command": "schedule.today_rooms",
+   "aliases": [
+    ".ruanganhariini"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".ruanganhariini"
+   ]
+  },
+  {
+   "command": "schedule.tomorrow",
+   "aliases": [
+    ".besok",
+    ".jadwal besok"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".besok"
+   ]
+  },
+  {
+   "command": "schedule.week",
+   "aliases": [
+    ".mingguini",
+    ".jadwal minggu",
+    ".jadwal mingguini"
+   ],
+   "akses": "Pengguna",
+   "data": "Seed kelas",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kelas",
+   "strategi": "skrip",
+   "catatan": "kelas.py",
+   "contoh_sintaks": [
+    ".mingguini"
+   ]
+  },
+  {
+   "command": "scheduler.status",
+   "aliases": [
+    ".queue",
+    ".scheduler status"
+   ],
+   "akses": "Admin privat",
+   "data": "Reminder / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".scheduler status",
+    ".queue"
+   ]
+  },
+  {
+   "command": "send",
+   "aliases": [
+    ".send"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "perlu-port",
+   "catatan": "alur klasifikasi → antrean review → persetujuan → kirim; lihat SKILL.md",
+   "contoh_sintaks": [
+    ".send"
+   ]
+  },
+  {
+   "command": "status",
+   "aliases": [
+    ".status",
+    ".admin status"
+   ],
+   "akses": "Admin privat",
+   "data": "Reminder / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".status"
+   ]
+  },
+  {
+   "command": "storage",
+   "aliases": [
+    ".storage"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".storage"
+   ]
+  },
+  {
+   "command": "system",
+   "aliases": [
+    ".system"
+   ],
+   "akses": "Admin privat",
+   "data": "Reminder / BotSetting",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".system"
+   ]
+  },
+  {
+   "command": "tasks",
+   "aliases": [
+    ".tasks",
+    ".tugas",
+    ".deadline",
+    ".mytask",
+    ".progress"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-tugas-catatan",
+   "strategi": "skrip",
+   "catatan": "tugas.py / cron Hermes",
+   "contoh_sintaks": [
+    ".tugas",
+    ".tugas hariini",
+    ".tambahtugas matkul|judul|deadline|catatan|dosen|PJ",
+    ".selesaitugas <id>",
+    ".tugas antrean",
+    ".tugas grup",
+    ".tugas tujuan <id> <grup>",
+    ".tugas tolak <id>",
+    ".tugas deadline <id> <tanggal>"
+   ]
+  },
+  {
+   "command": "user.profile",
+   "aliases": [
+    ".profile",
+    ".me"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-katalog-perintah",
+   "strategi": "diganti-hermes",
+   "catatan": "Hermes punya /help, /skills, dan sistem user/allowlist sendiri",
+   "contoh_sintaks": [
+    ".profile"
+   ]
+  },
+  {
+   "command": "util.bmi",
+   "aliases": [
+    ".bmi"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kalkulator",
+   "strategi": "skrip",
+   "catatan": "hitung.py",
+   "contoh_sintaks": [
+    ".bmi <kg> <cm>"
+   ]
+  },
+  {
+   "command": "util.calc",
+   "aliases": [
+    ".calc",
+    ".hitung",
+    ".kalkulator"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kalkulator",
+   "strategi": "skrip",
+   "catatan": "hitung.py",
+   "contoh_sintaks": [
+    ".calc <rumus>"
+   ]
+  },
+  {
+   "command": "util.clock",
+   "aliases": [
+    ".jam",
+    ".waktu",
+    ".clock"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "hermes-native",
+   "catatan": "tanggal/waktu WIB: Hermes bisa tanya waktu sistem",
+   "contoh_sintaks": [
+    ".jam"
+   ]
+  },
+  {
+   "command": "util.convert",
+   "aliases": [
+    ".convert",
+    ".konversi",
+    ".kurs"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kalkulator",
+   "strategi": "skrip",
+   "catatan": "hitung.py",
+   "contoh_sintaks": [
+    ".convert <nilai> <dari> <ke>"
+   ]
+  },
+  {
+   "command": "util.gpa",
+   "aliases": [
+    ".ipk",
+    ".gpa"
+   ],
+   "akses": "Pengguna",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-kalkulator",
+   "strategi": "skrip",
+   "catatan": "hitung.py",
+   "contoh_sintaks": [
+    ".ipk"
+   ]
+  },
+  {
+   "command": "util.urlcheck",
+   "aliases": [
+    ".urlcheck",
+    ".shortlink"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "hermes-native",
+   "catatan": "cuaca/wiki/cek URL: gunakan tool web Hermes",
+   "contoh_sintaks": [
+    ".urlcheck"
+   ]
+  },
+  {
+   "command": "util.weather",
+   "aliases": [
+    ".cuaca",
+    ".weather"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "hermes-native",
+   "catatan": "cuaca/wiki/cek URL: gunakan tool web Hermes",
+   "contoh_sintaks": [
+    ".cuaca"
+   ]
+  },
+  {
+   "command": "util.wiki",
+   "aliases": [
+    ".wiki",
+    ".wikipedia",
+    ".kbbi"
+   ],
+   "akses": "Pengguna",
+   "data": "State layanan lokal",
+   "status": "Handler ditemukan",
+   "skill": "-",
+   "strategi": "hermes-native",
+   "catatan": "cuaca/wiki/cek URL: gunakan tool web Hermes",
+   "contoh_sintaks": [
+    ".wiki"
+   ]
+  },
+  {
+   "command": "whatsapp.status",
+   "aliases": [
+    ".whatsapp status"
+   ],
+   "akses": "Admin privat",
+   "data": "Memori / eksternal",
+   "status": "Handler ditemukan",
+   "skill": "hdybot-admin-grup",
+   "strategi": "diganti-hermes",
+   "catatan": "status/log/backup: pakai `hermes doctor`, `hermes status`, log Hermes",
+   "contoh_sintaks": [
+    ".whatsapp status"
+   ]
+  }
+ ],
+ "halaman_menu": [
+  {
+   "judul": "📚 Informasi kelas",
+   "isi": [
+    "kelas",
+    "anggota [nama]",
+    "pengurus",
+    "rules",
+    "faq",
+    "matkul",
+    "dosen [nama]",
+    "kalender"
+   ]
+  },
+  {
+   "judul": "🕒 Jadwal dan tugas",
+   "isi": [
+    "jadwal [hari]",
+    "besok",
+    "mingguini",
+    "kuliahberikutnya",
+    "cekjadwal <tanggal>",
+    "tugas",
+    "tugas hariini",
+    "tambahtugas matkul|judul|deadline|catatan|dosen|PJ",
+    "selesaitugas <id>",
+    "reminder",
+    "note list",
+    "jadwal senin",
+    "jadwal export csv",
+    "matkulhariini",
+    "dosenhariini",
+    "ruanganhariini"
+   ]
+  },
+  {
+   "judul": "🧠 Belajar dan materi",
+   "isi": [
+    "ask <pertanyaan>",
+    "rapikan <teks>",
+    "summarize <teks>",
+    "jurnal <topik>",
+    "materi",
+    "keperawatan",
+    "sdki <diagnosis>",
+    "sop <prosedur>",
+    "carimateri <kata>",
+    "download <id>",
+    "tanyadokumen <id> <pertanyaan>",
+    "ringkasdokumen <id>",
+    "drive files",
+    "askep <topik>",
+    "pengkajian <topik>",
+    "penunjang",
+    "ukom",
+    "kampus",
+    "kuisukom",
+    "highalert",
+    "safety",
+    "berita",
+    "ppni",
+    "mtb",
+    "ebook",
+    "imt <kg> <cm>",
+    "gcs E4 V5 M6",
+    "balance <masuk> <keluar>",
+    "tetesan 500 ml 6 jam 20 tetes/ml",
+    "flashcard",
+    "quiz",
+    "translate"
+   ]
+  },
+  {
+   "judul": "🎮 Permainan",
+   "isi": [
+    "game",
+    "tebakkata",
+    "caklontong",
+    "family100",
+    "mathquiz",
+    "jawab <teks>",
+    "nyerah",
+    "hint",
+    "score",
+    "dailychallenge",
+    "game buat [jumlah|duel]",
+    "game gabung",
+    "game mulai [kategori]",
+    "game riwayat",
+    "suit <pilihan>",
+    "leaderboard",
+    "privacy gamification on",
+    "game ai <topik>",
+    "faktaunik",
+    "doaharian",
+    "listsurah",
+    "jadwalsholat",
+    "truth",
+    "dare",
+    "koin",
+    "afk",
+    "unafk"
+   ]
+  },
+  {
+   "judul": "🎨 Media",
+   "isi": [
+    "sticker",
+    "ttp <teks>",
+    "toimg",
+    "qr <teks>",
+    "doc pdf <judul>|<isi>",
+    "doc makalah <topik>",
+    "doc ppt [topik]",
+    "kartujadwal [hari]",
+    "blur",
+    "resize <lebar> <tinggi>",
+    "suratizin",
+    "notulensi",
+    "quotemaker",
+    "gambar",
+    "ocr",
+    "tts"
+   ]
+  },
+  {
+   "judul": "🛠️ Utilitas",
+   "isi": [
+    "jam",
+    "calc <rumus>",
+    "convert <nilai> <dari> <ke>",
+    "bmi <kg> <cm>",
+    "ipk",
+    "pantun [tema]",
+    "music <judul>",
+    "cerita <tema>",
+    "motivasi",
+    "dadu",
+    "quotes [tema]",
+    "apakah <pertanyaan>",
+    "hilih <teks>",
+    "owner",
+    "groupid",
+    "about",
+    "info",
+    "help",
+    "menu",
+    "profile",
+    "announce",
+    "kelompok",
+    "countdown",
+    "cuaca",
+    "wiki",
+    "urlcheck",
+    "stats",
+    "cekpesan"
+   ]
+  },
+  {
+   "judul": "🔐 Administrasi",
+   "isi": [
+    "health",
+    "status",
+    "dashboard",
+    "runtime",
+    "ping",
+    "ai status",
+    "groups",
+    "backup",
+    "audit",
+    "logs [jumlah]",
+    "errors [today]",
+    "relay list",
+    "tugas antrean",
+    "tugas grup",
+    "tugas tujuan <id> <grup>",
+    "tugas tolak <id>",
+    "tugas deadline <id> <tanggal>",
+    "db status",
+    "drive status",
+    "drive sync",
+    "whatsapp status",
+    "scheduler status",
+    "storage",
+    "queue",
+    "repo <URL>",
+    "ai models",
+    "ai model <alias>",
+    "ai auto on",
+    "ai test <pesan>",
+    "groups sources",
+    "groups add <JID> <nama>",
+    "groups pause <JID>",
+    "groups resume <JID>",
+    "nimbrung status",
+    "filter status",
+    "filter review",
+    "digest today",
+    "broadcast preview <ID>",
+    "broadcast send <ID>",
+    "reminder pause",
+    "reminder resume",
+    "admin pause",
+    "admin resume",
+    "login",
+    "logout",
+    "system",
+    "priority",
+    "pending",
+    "approve",
+    "reject",
+    "send",
+    "confirm",
+    "cancel",
+    "pair",
+    "tambahjadwal",
+    "editjadwal",
+    "hapusjadwal",
+    "resetjadwal",
+    "setpjmk",
+    "setkelasa"
+   ]
+  },
+  {
+   "judul": "🎓 LMS STIKES Husada Jombang",
+   "isi": [
+    "lms help",
+    "lms <nama> dashboard",
+    "lms <nama> matkul",
+    "lms <nama> materi",
+    "lms <nama> tugas",
+    "lms <nama> kuis",
+    "lms <nama> sync",
+    "lms <nama> logout"
+   ]
+  }
+ ]
+}

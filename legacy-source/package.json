@@ -1,0 +1,67 @@
+{
+  "name": "hdybot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "HdyBot — Nursing Class A Assistant (AI WhatsApp class assistant)",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node start.js",
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:commands": "npm run build && node scripts/command-catalog.mjs --check",
+    "docs:commands": "npm run build && node scripts/command-catalog.mjs --write",
+    "test:e2e": "vitest run tests/integration-e2e.test.ts",
+    "test:watch": "vitest",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:backup": "bash scripts/backup.sh",
+    "db:restore": "bash scripts/restore.sh",
+    "pm2:start": "npm run build && pm2 start ecosystem.config.cjs && pm2 save",
+    "pm2:stop": "pm2 stop hdybot",
+    "pm2:restart": "npm run build && pm2 restart hdybot",
+    "pm2:logs": "pm2 logs hdybot --lines 100",
+    "pm2:status": "pm2 status",
+    "health": "tsx src/scripts/health.ts",
+    "cli": "tsx src/scripts/admin-cli.ts",
+    "benchmark:id": "tsx src/scripts/benchmark-id.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "cfb": "1.2.2",
+    "cheerio": "^1.0.0",
+    "docx": "^9.15.4",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^11.3.3",
+    "pdf-lib": "1.17",
+    "pino": "^9.6.0",
+    "pptxgenjs": "^4.0.1",
+    "qrcode": "1.5",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "0.35.5",
+    "whatsapp-web.js": "1.34.8",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/qrcode": "^1.5.6",
+    "jszip": "3.10.2",
+    "prisma": "^6.19.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "4.1.12"
+  },
+  "allowScripts": {
+    "@prisma/client@6.19.3": true,
+    "prisma@6.19.3": true,
+    "@prisma/engines@6.19.3": true,
+    "esbuild@0.28.2": true
+  }
+}
